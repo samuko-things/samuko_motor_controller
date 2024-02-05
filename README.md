@@ -28,7 +28,9 @@ The AIM of this project is to design and make available a motor driver system `(
 The `smc` project consist of the following sub-parts:
 
 - `smc_l298n_pid_driver module`: It has a controller that handles the PID control. here's the link to the repo of the control driver code -> [smc_l298n_pid_driver_code](https://github.com/samuko-things-company/smc_l298n_pid_driver_code). The module provides a USB serial communication interface using the FTDI programmer to connect with a PC or micro-computer during Encoder and PID control parameter setup, microcomputer-based (Raspberry Pi, etc.) projects or ROS2-based projects. It also provides an I2C communication interface for microcontroller-based (Arduino) projects.
+
 ![smc_img](./docs/smc_img2.jpeg)
+
 - `smc_app`: to help setup the Encoder and PID control parameters for the **geared DC motor with a quadrature encoder** connected to the **smc_l298n_pid_driver module**. Here's the lik to the repo -> [smc_app](https://github.com/samuko-things-company/smc_app)
 - `smc_pyserial_lib`: library that helps communicate with the already setup motor control in you PC or microcomputer-based python projects. here's a link to the repo -> [smc_pyserial_lib](https://github.com/samuko-things-company/smc_pyserial_lib) 
 - `smc_cppserial_lib`: library that helps communicate with the already setup motor control in you PC or microcomputer-based cpp projects. here's a link to the repo -> [smc_cppserial_lib](https://github.com/samuko-things-company/smc_cppserial_lib) 
