@@ -34,7 +34,7 @@ The `smc` project consist of the following sub-parts:
 - **`smc_app`**: to help setup the Encoder and PID control parameters for the **geared DC motor with a quadrature encoder** connected to the **smc_l298n_pid_driver module**. Here's the lik to the repo -> [smc_app](https://github.com/samuko-things-company/smc_app)
 - **`smc_pyserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based python projects. here's a link to the repo -> [smc_pyserial_lib](https://github.com/samuko-things-company/smc_pyserial_lib) 
 - **`smc_cppserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based cpp projects. here's a link to the repo -> [smc_cppserial_lib](https://github.com/samuko-things-company/smc_cppserial_lib) 
-- **`smc_ros2_interface`**: ros2 harware interface plugin package to help communicate with the already setup motor control in your ROS2-based mobile robotics project **(currently implemented in ROS2-humble LTS)**. here's a link to the repo -> [smc_ros2_interface](https://github.com/samuko-things-company/smc_ros2_interface) 
+- **`smc_ros2_hw_plugin`**: ros2 harware interface plugin package to help communicate with the already setup motor control in your ROS2-based mobile robotics project **(currently implemented in ROS2-humble LTS)**. here's a link to the repo -> [smc_ros2_hw_plugin](https://github.com/samuko-things-company/smc_ros2_hw_plugin) 
 - **`smc_i2c_lib`**: arduino library that helps communicate with the already setup motor control via I2C in your arduino-based project (e.g Arduino nano, UNO, MEGA, ESP32, e.t.c). here's the link to the repo -> [smc_i2c_lib](https://github.com/samuko-things-company/smc_i2c_lib) 
 <br/>
 <br/>
@@ -51,7 +51,7 @@ The `smc` project consist of the following sub-parts:
 
 - After successfully setingup the PID controller, close the application, disconnect the driver module from the PC and hit the reset button on the `smc_l298n_pid_driver module`.
 
-- connect it to your prefered project using any of the API library - `smc_pyserial_lib`, `smc_cppserial_lib`, `smc_ros2_interface`, or `smc_i2c_lib`.
+- connect it to your prefered project using any of the API library - `smc_pyserial_lib`, `smc_cppserial_lib`, `smc_ros2_hw_plugin`, or `smc_i2c_lib`.
 
 ## RESOURCES USED AND THEIR REFERENCES
 
