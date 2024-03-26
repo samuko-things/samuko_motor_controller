@@ -27,15 +27,21 @@ The AIM of this project is to design and make available a motor driver system `(
 <br/>
 The `smc` project consist of the following sub-parts:
 
-- **`smc_l298n_pid_driver module`**: It has a controller that handles the PID control. here's the link to the repo of the control driver code -> [smc_l298n_pid_driver_code](https://github.com/samuko-things-company/smc_l298n_pid_driver_code). The module provides a USB serial communication interface using the FTDI programmer to connect with a PC or micro-computer during Encoder and PID control parameter setup, microcomputer-based (Raspberry Pi, etc.) projects or ROS2-based projects. It also provides an I2C communication interface for microcontroller-based (Arduino) projects.
+- **`smc_l298n_pid_driver module`**: this is the physical driver module with the l298n driver IC and an ATMEGA328p microcontroller to handle the PID control. The module provides a USB serial communication interface using the FTDI programmer to connect with a PC or micro-computer to setup and use in projects. It also provides an I2C communication interface for microcontroller-based (Arduino) projects.
 
 ![smc_img](./docs/smc_img2.jpeg)
 
+- **`smc_l298n_pid_driver_code`**: this is the code uploaded to the `smc_l298n_pid_driver module` which contains the encoder setup and PID control code with communication interface codes. Here's the link to the repo of the control driver code -> [smc_l298n_pid_driver_code](https://github.com/samuko-things-company/smc_l298n_pid_driver_code).
+
 - **`smc_app`**: to help setup the Encoder and PID control parameters for the **geared DC motor with a quadrature encoder** connected to the **smc_l298n_pid_driver module**. Here's the lik to the repo -> [smc_app](https://github.com/samuko-things-company/smc_app)
-- **`smc_pyserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based python projects. here's a link to the repo -> [smc_pyserial_lib](https://github.com/samuko-things-company/smc_pyserial_lib) 
-- **`smc_cppserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based cpp projects. here's a link to the repo -> [smc_cppserial_lib](https://github.com/samuko-things-company/smc_cppserial_lib) 
+
 - **`smc_ros2_hw_plugin`**: ros2 harware interface plugin package to help communicate with the already setup motor control in your ROS2-based mobile robotics project **(currently implemented in ROS2-humble LTS)**. here's a link to the repo -> [smc_ros2_hw_plugin](https://github.com/samuko-things-company/smc_ros2_hw_plugin) 
+
 - **`smc_i2c_lib`**: arduino library that helps communicate with the already setup motor control via I2C in your arduino-based project (e.g Arduino nano, UNO, MEGA, ESP32, e.t.c). here's the link to the repo -> [smc_i2c_lib](https://github.com/samuko-things-company/smc_i2c_lib) 
+
+- **`smc_pyserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based python projects. here's a link to the repo -> [smc_pyserial_lib](https://github.com/samuko-things-company/smc_pyserial_lib) 
+
+- **`smc_cppserial_lib`**: library that helps communicate with the already setup motor control in you PC or microcomputer-based cpp projects. here's a link to the repo -> [smc_cppserial_lib](https://github.com/samuko-things-company/smc_cppserial_lib) 
 <br/>
 <br/>
 
